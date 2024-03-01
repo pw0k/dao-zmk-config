@@ -37,10 +37,10 @@
                 };
                 num_layer {
                         bindings = <
-            &kp C_BRI_UP        &kp LBKT        &kp N7         &kp N8         &kp N9    &kp RBKT               &kp K_REDO    &kp K_PASTE      &kp K_COPY       &kp K_CUT     &kp K_UNDO       &kp C_VOL_UP
-            &kp C_BRI_DN   &mt LGUI LPAR   &mt LALT N4   &mt LCTRL N5   &mt LSHFT N6   &kp EQUAL               &kp CAPS      &mt RSHFT LEFT   &mt RCTRL DOWN   &mt RALT UP   &mt RGUI RIGHT   &kp C_VOL_DN
-                &kp C_PP       &kp GRAVE        &kp N1         &kp N2         &kp N3    &kp BSLH               &kp INS       &kp HOME         &kp PAGE_DOWN    &kp PAGE_UP   &kp END          &kp C_MUTE
-                                                              &kp DOT         &kp N0   &kp MINUS               &kp KP_LPAR   &kp KP_RPAR      &kp MINUS
+            &kp C_BRI_UP        &kp LBKT        &kp N7         &kp N8         &kp N9    &kp RBKT               &kp C_AC_REDO   &kp C_AC_PASTE   &kp C_AC_COPY    &kp C_AC_CUT  &kp C_AC_UNDO    &kp C_VOL_UP
+            &kp C_BRI_DN   &mt LGUI LPAR   &mt LALT N4   &mt LCTRL N5   &mt LSHFT N6   &kp EQUAL               &kp CAPS        &mt RSHFT LEFT   &mt RCTRL DOWN   &mt RALT UP   &mt RGUI RIGHT   &kp C_VOL_DN
+                &kp C_PP       &kp GRAVE        &kp N1         &kp N2         &kp N3    &kp BSLH               &kp INS         &kp HOME         &kp PAGE_DOWN    &kp PAGE_UP   &kp END          &kp C_MUTE
+                                                              &kp DOT         &kp N0   &kp MINUS               &kp KP_LPAR     &kp KP_RPAR      &kp MINUS
                         >;
                 };
 
