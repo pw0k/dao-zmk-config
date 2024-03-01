@@ -30,15 +30,15 @@
                 default_layer {
                         bindings = <
                 &kp EQUAL       &kp Q        &kp W         &kp E             &kp R         &kp T               &kp Y         &kp U            &kp I         &kp O        &kp P           &kp APOS
-                &kp LBKT   &mt LGUI A   &mt LALT S   &mt LCTRL D       &mt LSHFT F         &kp G               &kp H         &mt RSHFT J      &mt RCTRL K   &mt RALT L   &mt RGUI SEMI   &kp LPAR
+                &kp LBKT   &mt LCMD A   &mt LALT S   &mt LCTRL D       &mt LSHFT F         &kp G               &kp H         &mt RSHFT J      &mt RCTRL K   &mt RALT L   &mt RGUI SEMI   &kp LPAR
                 &kp MINUS       &kp Z        &kp X         &kp C             &kp V         &kp B               &kp N         &kp M            &kp COMMA     &kp DOT      &kp FSLH        &kp BSLH
                                                      &lt FUN ESC   &mt LSHFT SPACE   &lt NUM TAB               &lt NUM RET   &mt RSHFT BSPC   &lt FUN DEL
                         >;
                 };
                 num_layer {
                         bindings = <
-            &kp C_BRI_UP        &kp LBKT        &kp N7         &kp N8         &kp N9    &kp RBKT               &kp LGUI(LS(Z))   &kp LGUI(V)      &kp LGUI(C)      &kp LGUI(X)   &kp LGUI(Z)      &kp C_VOL_UP
-            &kp C_BRI_DN   &mt LGUI LPAR   &mt LALT N4   &mt LCTRL N5   &mt LSHFT N6   &kp EQUAL               &kp CAPS          &mt RSHFT LEFT   &mt RCTRL DOWN   &mt RALT UP   &mt RGUI RIGHT   &kp C_VOL_DN
+            &kp C_BRI_UP        &kp LBKT        &kp N7         &kp N8         &kp N9    &kp RBKT               &kp T   &kp T      &kp T      &kp T   &kp T      &kp C_VOL_UP
+            &kp C_BRI_DN   &mt LCMD LPAR   &mt LALT N4   &mt LCTRL N5   &mt LSHFT N6   &kp EQUAL               &kp CAPS          &mt RSHFT LEFT   &mt RCTRL DOWN   &mt RALT UP   &mt RGUI RIGHT   &kp C_VOL_DN
                 &kp C_PP       &kp GRAVE        &kp N1         &kp N2         &kp N3    &kp BSLH               &kp INS           &kp HOME         &kp PAGE_DOWN    &kp PAGE_UP   &kp END          &kp C_MUTE
                                                               &kp DOT         &kp N0   &kp MINUS               &kp KP_LPAR       &kp KP_RPAR      &kp MINUS
                         >;
@@ -47,7 +47,7 @@
                 fun_layer {
                         bindings = <
          &kp KP_NUM        &kp F12        &kp F7         &kp F8         &kp F9         &kp PSCRN               &kp RBRC       &kp LPAR          &kp STAR          &kp AMPS        &kp LBRC         &kp C_VOL_UP
-          &kp EQUAL   &mt LGUI F11   &mt LALT F4   &mt LCTRL F5   &mt LSHFT F6          &kp SLCK               &kp PLUS       &mt RSHFT CARET   &mt RCTRL PRCNT   &mt RALT DLLR   &mt RGUI COLON   &kp C_MUTE
+          &kp EQUAL   &mt LCMD F11   &mt LALT F4   &mt LCTRL F5   &mt LSHFT F6          &kp SLCK               &kp PLUS       &mt RSHFT CARET   &mt RCTRL PRCNT   &mt RALT DLLR   &mt RGUI COLON   &kp C_MUTE
            &kp LALT        &kp F10        &kp F1         &kp F2         &kp F3   &kp PAUSE_BREAK               &kp PIPE       &kp HASH          &kp AT            &kp EXCL        &kp TILDE        &kp C_VOL_DN
                                                          &trans         &trans        &lt BT RET               &lt BT UNDER   &kp RPAR          &kp LPAR
                         >;
