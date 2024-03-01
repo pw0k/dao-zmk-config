@@ -10,8 +10,8 @@
 
 #define DEF 0
 #define NUM 1
-#define RSE 2
-#define ADJ 3
+#define FUN 2
+#define BT 3
 
 &lt { quick_tap_ms = <200>; };
 &mt { quick_tap_ms = <200>; };
@@ -29,34 +29,34 @@
 
                 default_layer {
                         bindings = <
-          &kp EQUAL  &kp Q        &kp W        &kp E         &kp R         &kp T          &kp Y   &kp U         &kp I         &kp O        &kp P           &kp LBKT
-          &kp LPAR   &mt LGUI A   &mt LALT S   &mt LCTRL D   &mt LSHFT F   &kp G          &kp H   &mt RSHFT J   &mt RCTRL K   &mt RALT L   &mt RGUI SEMI   &kp SQT
+          &kp EQUAL  &kp Q        &kp W        &kp E         &kp R         &kp T          &kp Y   &kp U         &kp I         &kp O        &kp P           &kp LPAR
+          &kp LBKT   &mt LGUI A   &mt LALT S   &mt LCTRL D   &mt LSHFT F   &kp G          &kp H   &mt RSHFT J   &mt RCTRL K   &mt RALT L   &mt RGUI SEMI   &kp SQT
           &kp MINUS  &kp Z        &kp X        &kp C         &kp V         &kp B          &kp N   &kp M         &kp COMMA     &kp DOT      &kp FSLH        &kp BSLH
-                                     &lt RSE ESC   &mt LSHFT SPACE   &lt NUM TAB          &lt NUM RET   &mt RSHFT BSPC   &lt RSE DEL
+                              &lt FUN ESC      &mt LSHFT SPACE       &lt NUM TAB          &lt NUM RET     &mt RSHFT BSPC      &lt FUN DEL
                         >;
                 };
                 num_layer {
                         bindings = <
-          &kp F1     &kp LBKT        &kp N7        &kp N8         &kp N9         &kp RBKT           &kp LBRC      &kp RBRC          &kp ASTERISK        &kp AMPERSAND     &kp LBRC         &kp F12
-          &kp PLUS   &mt LGUI SEMI   &mt LALT N4   &mt LCTRL N5   &mt LSHFT N6   &kp EQUAL          &kp PLUS      &mt RSHFT CARET   &mt RCTRL PERCENT   &mt RALT DOLLAR   &mt RGUI COLON   &kp MINUS
-          &kp EQUAL  &kp GRAVE       &kp N1        &kp N2         &kp N3         &kp BSLH           &kp PIPE      &kp HASH          &kp AT              &kp EXCL          &kp GRAVE        &kp RALT
+          &kp PRCNT  &kp LBKT        &kp N7        &kp N8         &kp N9         &kp RBKT           &kp LBRC      &kp RBRC          &kp ASTERISK        &kp AMPERSAND     &kp LBRC         &kp F12
+          &kp PLUS   &mt LGUI LPAR   &mt LALT N4   &mt LCTRL N5   &mt LSHFT N6   &kp RPAR           &kp PLUS      &mt RSHFT CARET   &mt RCTRL PERCENT   &mt RALT DOLLAR   &mt RGUI COLON   &kp MINUS
+          &kp DLLR   &kp GRAVE       &kp N1        &kp N2         &kp N3         &kp BSLH           &kp PIPE      &kp HASH          &kp AT              &kp EXCL          &kp GRAVE        &kp RALT
                                                    &kp DOT        &kp N0         &kp SPACE          &kp KP_LPAR   &kp KP_RPAR       &kp MINUS
                         >;
                 };
 
-                raise_layer {
+                fun_layer {
                         bindings = <
-          &mt LGUI KP_NUM   &kp KP_SLASH      &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_MINUS   &kp C_VOL_UP   &kp HOME   &kp PSCRN   &kp PG_UP   &kp SLCK          &kp CLCK   
-          &mt LCTRL EQUAL   &kp KP_MULTIPLY   &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_PLUS    &kp C_MUTE     &kp LEFT   &kp UP      &kp RIGHT   &kp INS           &mt RCTRL  K_APP
-          &kp LALT          &kp KP_N0         &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DOT     &kp C_VOL_DN   &kp END    &kp DOWN    &kp PG_DN   &kp PAUSE_BREAK   &kp RALT
-                                                          &trans      &trans      &lt ADJ RET    &lt ADJ ESC    &trans     &trans
+          &kp KP_NUM  &kp F12       &kp F7        &kp F8         &kp F9         &kp PSCRN           &kp C_VOL_UP   &kp HOME         &kp PSCRN      &kp PG_UP        &kp SLCK          &kp CLCK
+          &kp EQUAL   &mt LGUI F11  &mt LALT F4   &mt LCTRL F5   &mt LSHFT F6   &kp SLCK            &kp C_MUTE     &mt RSHFT LEFT   &mt RCTRL UP   &mt RALT RIGHT   &mt RGUI INS      &kp K_APP
+          &kp LALT    &kp F10       &kp F1        &kp F2         &kp F3         &kp PAUSE_BREAK     &kp C_VOL_DN   &kp END          &kp DOWN       &kp PG_DN        &kp PAUSE_BREAK   &kp RALT
+                                                  &trans         &trans         &lt BT RET          &lt BT ESC    &trans           &trans
                         >;
                 };
-                adjust_layer {
+                bt_layer {
                         bindings = <
- &bootloader   &none          &none          &none          &none          &none          &none          &none          &none          &none          &none          &bootloader
- &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0   &bt BT_CLR
- &sys_reset        &none          &none          &none          &none          &none          &none          &none          &none          &none          &none          &sys_reset
+          &bootloader   &none          &none          &none          &none          &none          &none          &none          &none          &none          &none          &bootloader
+          &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0   &bt BT_CLR
+          &sys_reset        &none          &none          &none          &none          &none          &none          &none          &none          &none          &none          &sys_reset
                                              &trans         &none          &trans         &trans         &none          &trans
                         >;
                 };
