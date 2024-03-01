@@ -29,35 +29,36 @@
 
                 default_layer {
                         bindings = <
-          &kp EQUAL  &kp Q        &kp W        &kp E         &kp R         &kp T          &kp Y   &kp U         &kp I         &kp O        &kp P           &kp LPAR
-          &kp LBKT   &mt LGUI A   &mt LALT S   &mt LCTRL D   &mt LSHFT F   &kp G          &kp H   &mt RSHFT J   &mt RCTRL K   &mt RALT L   &mt RGUI SEMI   &kp SQT
-          &kp MINUS  &kp Z        &kp X        &kp C         &kp V         &kp B          &kp N   &kp M         &kp COMMA     &kp DOT      &kp FSLH        &kp BSLH
-                              &lt FUN ESC      &mt LSHFT SPACE       &lt NUM TAB          &lt NUM RET     &mt RSHFT BSPC      &lt FUN DEL
+                &kp EQUAL       &kp Q        &kp W         &kp E             &kp R         &kp T               &kp Y         &kp U            &kp I         &kp O        &kp P           &kp APOS
+                &kp LBKT   &mt LGUI A   &mt LALT S   &mt LCTRL D       &mt LSHFT F         &kp G               &kp H         &mt RSHFT J      &mt RCTRL K   &mt RALT L   &mt RGUI SEMI   &kp LPAR
+                &kp MINUS       &kp Z        &kp X         &kp C             &kp V         &kp B               &kp N         &kp M            &kp COMMA     &kp DOT      &kp FSLH        &kp BSLH
+                                                     &lt FUN ESC   &mt LSHFT SPACE   &lt NUM TAB               &lt NUM RET   &mt RSHFT BSPC   &lt FUN DEL
                         >;
                 };
                 num_layer {
                         bindings = <
-          &kp PRCNT  &kp LBKT        &kp N7        &kp N8         &kp N9         &kp RBKT           &kp LBRC      &kp RBRC          &kp ASTERISK        &kp AMPERSAND     &kp LBRC         &kp F12
-          &kp PLUS   &mt LGUI LPAR   &mt LALT N4   &mt LCTRL N5   &mt LSHFT N6   &kp RPAR           &kp PLUS      &mt RSHFT CARET   &mt RCTRL PERCENT   &mt RALT DOLLAR   &mt RGUI COLON   &kp MINUS
-          &kp DLLR   &kp GRAVE       &kp N1        &kp N2         &kp N3         &kp BSLH           &kp PIPE      &kp HASH          &kp AT              &kp EXCL          &kp GRAVE        &kp RALT
-                                                   &kp DOT        &kp N0         &kp SPACE          &kp KP_LPAR   &kp KP_RPAR       &kp MINUS
+            &kp C_BRI_UP        &kp LBKT        &kp N7         &kp N8         &kp N9    &kp RBKT               &kp K_REDO    &kp K_PASTE      &kp K_COPY       &kp K_CUT     &kp K_UNDO       &kp C_VOL_UP
+            &kp C_BRI_DN   &mt LGUI LPAR   &mt LALT N4   &mt LCTRL N5   &mt LSHFT N6   &kp EQUAL               &kp CAPS      &mt RSHFT LEFT   &mt RCTRL DOWN   &mt RALT UP   &mt RGUI RIGHT   &kp C_VOL_DN
+                &kp C_PP       &kp GRAVE        &kp N1         &kp N2         &kp N3    &kp BSLH               &kp INS       &kp HOME         &kp PAGE_DOWN    &kp PAGE_UP   &kp END          &kp C_MUTE
+                                                              &kp DOT         &kp N0   &kp MINUS               &kp KP_LPAR   &kp KP_RPAR      &kp MINUS
                         >;
                 };
 
                 fun_layer {
                         bindings = <
-          &kp KP_NUM  &kp F12       &kp F7        &kp F8         &kp F9         &kp PSCRN           &kp C_VOL_UP   &kp HOME         &kp PSCRN      &kp PG_UP        &kp SLCK          &kp CLCK
-          &kp EQUAL   &mt LGUI F11  &mt LALT F4   &mt LCTRL F5   &mt LSHFT F6   &kp SLCK            &kp C_MUTE     &mt RSHFT LEFT   &mt RCTRL UP   &mt RALT RIGHT   &mt RGUI INS      &kp K_APP
-          &kp LALT    &kp F10       &kp F1        &kp F2         &kp F3         &kp PAUSE_BREAK     &kp C_VOL_DN   &kp END          &kp DOWN       &kp PG_DN        &kp PAUSE_BREAK   &kp RALT
-                                                  &trans         &trans         &lt BT RET          &lt BT ESC    &trans           &trans
+         &kp KP_NUM        &kp F12        &kp F7         &kp F8         &kp F9         &kp PSCRN               &kp RBRC       &kp LPAR          &kp STAR          &kp AMPS        &kp LBRC         &kp C_VOL_UP
+          &kp EQUAL   &mt LGUI F11   &mt LALT F4   &mt LCTRL F5   &mt LSHFT F6          &kp SLCK               &kp PLUS       &mt RSHFT CARET   &mt RCTRL PRCNT   &mt RALT DLLR   &mt RGUI COLON   &kp C_MUTE
+           &kp LALT        &kp F10        &kp F1         &kp F2         &kp F3   &kp PAUSE_BREAK               &kp PIPE       &kp HASH          &kp AT            &kp EXCL        &kp TILDE        &kp C_VOL_DN
+                                                         &trans         &trans        &lt BT RET               &lt BT UNDER   &kp RPAR          &kp LPAR
                         >;
                 };
+
                 bt_layer {
                         bindings = <
-          &bootloader   &none          &none          &none          &none          &none          &none          &none          &none          &none          &none          &bootloader
-          &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0   &bt BT_CLR
-          &sys_reset        &none          &none          &none          &none          &none          &none          &none          &none          &none          &none          &sys_reset
-                                             &trans         &none          &trans         &trans         &none          &trans
+          &bootloader   &none          &none          &none          &none          &none                     &none          &none          &none          &none          &none          &bootloader
+          &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4              &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0   &bt BT_CLR
+          &sys_reset    &none          &none          &none          &none          &none                     &none          &none          &none          &none          &none          &sys_reset
+                                                      &trans         &none          &trans                    &trans         &none          &trans
                         >;
                 };
         };

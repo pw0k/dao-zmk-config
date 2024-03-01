@@ -63,5 +63,7 @@ Because of current ZMK limitations, Dao44 keymap is in the branch [dao44](https:
 It's OK. Proof: https://zmk.dev/docs/troubleshooting#file-transfer-error
 
 ### todo
+https://nickcoutsos.github.io/keymap-editor/ editor
+https://github.com/manna-harbour/miryoku/tree/master/docs/reference miryoku original by layers
 corne_miryoku_qwerty_no_mouse_keymap_example.txt - for info
 [<img src="example_miryoku_qwerty.png" />](example_miryoku_qwerty.png)
