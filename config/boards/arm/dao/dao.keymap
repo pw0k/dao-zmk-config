@@ -37,7 +37,7 @@
                 };
                 num_layer {
                         bindings = <
-            &kp C_BRI_UP        &kp LBKT        &kp N7         &kp N8         &kp N9    &kp RBKT               &kp LCMD(LS(Z))   &kp LCMD(V)      &kp LCMD(C)      &kp LCMD(X)   &kp LCMD(Z)      &kp C_VOL_UP
+            &kp C_BRI_UP        &kp LBKT        &kp N7         &kp N8         &kp N9    &kp RBKT               &kp LGUI(LS(Z))   &kp LGUI(V)      &kp LGUI(C)      &kp LGUI(X)   &kp LGUI(Z)      &kp C_VOL_UP
             &kp C_BRI_DN   &mt LGUI LPAR   &mt LALT N4   &mt LCTRL N5   &mt LSHFT N6   &kp EQUAL               &kp CAPS          &mt RSHFT LEFT   &mt RCTRL DOWN   &mt RALT UP   &mt RGUI RIGHT   &kp C_VOL_DN
                 &kp C_PP       &kp GRAVE        &kp N1         &kp N2         &kp N3    &kp BSLH               &kp INS           &kp HOME         &kp PAGE_DOWN    &kp PAGE_UP   &kp END          &kp C_MUTE
                                                               &kp DOT         &kp N0   &kp MINUS               &kp KP_LPAR       &kp KP_RPAR      &kp MINUS
