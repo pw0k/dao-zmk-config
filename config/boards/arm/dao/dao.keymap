@@ -25,6 +25,20 @@
 };
 
 / {
+        combos {
+                compatible = "zmk,combos";
+
+                combo_copy {
+                    bindings = <&kp LG(C)>;
+                    key-positions = <26 27>;
+                };
+
+                combo_paste {
+                    bindings = <&kp LG(V)>;
+                    key-positions = <27 28>;
+                };
+            };
+
         keymap {
                 compatible = "zmk,keymap";
 
