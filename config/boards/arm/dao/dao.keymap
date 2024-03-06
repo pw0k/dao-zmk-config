@@ -10,8 +10,8 @@
 
 #define DEF 0
 #define NUM 1
-#define FUN 2
-#define IDEA 3
+#define IDEA 2
+#define FUN 3
 #define BT 4
 
 &lt { quick_tap_ms = <200>; };
@@ -29,13 +29,16 @@
                 compatible = "zmk,combos";
 
                 combo_copy {
-                    bindings = <&kp LG(C)>;
+                    timeout-ms = <50>;
+                    // XC
                     key-positions = <26 27>;
+                    bindings = <&kp LG(C)>;
                 };
 
                 combo_paste {
-                    bindings = <&kp LG(V)>;
+                    // CV
                     key-positions = <27 28>;
+                    bindings = <&kp LG(V)>;
                 };
             };
 
