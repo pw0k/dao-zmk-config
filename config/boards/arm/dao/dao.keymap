@@ -25,15 +25,7 @@
 };
 
 / {
-        behaviors {
-            td0: tap_dance_double_shift {
-                    compatible = "zmk,behavior-tap-dance";
-                    #binding-cells = <0>;
-                    tapping-term-ms = <200>;
-                    bindings = <&mt LSHIFT F>, <&dshift>;
-                };
-           };
-        };
+
 
         macros {
             dshift: double_shift {
@@ -111,9 +103,9 @@
 
                 idea_layer {
                         bindings = <
-                      &trans      &trans      &trans   &kp LG(E)   &kp LC(LA(R))   &kp LC(LA(D))               &trans   &trans   &trans   &trans   &trans   &trans
-                      &trans   &kp LG(Z)   &kp LG(X)   &kp LG(C)       &kp LG(V)   &kp LS(LG(Z))               &trans   &trans   &trans   &trans   &trans   &trans
-                      &trans      &trans      &trans      &trans          &trans          &trans               &trans   &trans   &trans   &trans   &trans   &trans
+                  &trans      &trans   &kp LG(LS(L))   &kp LG(E)   &kp LC(LA(R))   &kp LC(LA(D))               &trans   &trans   &trans   &trans   &trans   &trans
+                  &trans   &kp LG(Z)       &kp LG(X)   &kp LG(C)       &kp LG(V)   &kp LS(LG(Z))               &trans   &trans   &trans   &trans   &trans   &trans
+                  &trans      &trans          &trans      &trans          &trans          &trans               &trans   &trans   &trans   &trans   &trans   &trans
                                                           &trans          &trans          &trans               &trans   &trans   &trans
                         >;
                 };
