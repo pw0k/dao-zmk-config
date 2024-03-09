@@ -30,7 +30,15 @@
                 compatible = "zmk,behavior-tap-dance";
                 #binding-cells = <0>;
                 tapping-term-ms = <200>;
-                bindings = <&kp Q>, <&kp P>;
+                bindings = <&kp Q>, <&dshift>;
+            };
+        };
+
+        macros {
+            dshift: double_shift {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings = <&macro_tap &kp LSHFT &kp LSHFT>;
             };
         };
 
