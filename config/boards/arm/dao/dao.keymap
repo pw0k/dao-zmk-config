@@ -25,19 +25,38 @@
 };
 
 / {
+        behaviors {
+            td0: tap_dance_double_shift {
+                    compatible = "zmk,behavior-tap-dance";
+                    #binding-cells = <0>;
+                    tapping-term-ms = <200>;
+                    // вызов макро dshift на двойное нажатие
+                    bindings = <&mt LSHIFT F>, <&dshift>;
+                };
+           };
+        };
+
+        macros {
+            dshift: double_shift {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings = <&macro_tap &kp LSHFT &kp LSHFT>;
+            };
+        };
+
         combos {
                 compatible = "zmk,combos";
 
                 combo_undo {
                     // ZX
                     key-positions = <25 26>;
-                    bindings = <&kp LG(Z)>;
+                    bindings = <&kp LG(X)>;
                 };
 
                 combo_cut {
                     // ZC
                     key-positions = <25 27>;
-                    bindings = <&kp LG(X)>;
+                    bindings = <&kp LG(Z)>;
                 };
 
                 combo_copy {
@@ -50,6 +69,24 @@
                     // CV
                     key-positions = <27 28>;
                     bindings = <&kp LG(V)>;
+                };
+
+                combo_undo {
+                    // QW
+                    key-positions = <1 2>;
+                    bindings = <&kp LA(BSPC)>;
+                };
+
+                combo_undo {
+                    // WE
+                    key-positions = <2 3>;
+                    bindings = <&kp BSPC>;
+                };
+
+                combo_undo {
+                    // ER
+                    key-positions = <3 4>;
+                    bindings = <&kp DEL>;
                 };
             };
 
@@ -75,10 +112,10 @@
 
                 idea_layer {
                         bindings = <
-                          &trans      &trans      &trans   &kp LG(E)      &trans          &trans               &trans   &trans   &trans   &trans   &trans   &trans
-                          &trans   &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)   &kp LS(LG(Z))               &trans   &trans   &trans   &trans   &trans   &trans
-                          &trans      &trans      &trans      &trans      &trans          &trans               &trans   &trans   &trans   &trans   &trans   &trans
-                                                              &trans      &trans          &trans               &trans   &trans   &trans
+                      &trans      &trans      &trans   &kp LG(E)   &kp LC(LA(R))   &kp LC(LA(D))               &trans   &trans   &trans   &trans   &trans   &trans
+                      &trans   &kp LG(Z)   &kp LG(X)   &kp LG(C)       &kp LG(V)   &kp LS(LG(Z))               &trans   &trans   &trans   &trans   &trans   &trans
+                      &trans      &trans      &trans      &trans          &trans          &trans               &trans   &trans   &trans   &trans   &trans   &trans
+                                                          &trans          &trans          &trans               &trans   &trans   &trans
                         >;
                 };
 
