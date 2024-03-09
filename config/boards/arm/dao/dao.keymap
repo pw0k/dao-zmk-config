@@ -26,6 +26,16 @@
 
 / {
 
+        behaviors {
+            td0: tap_dance_double_shift {
+                    compatible = "zmk,behavior-tap-dance";
+                    #binding-cells = <0>;
+                    tapping-term-ms = <200>;
+                    bindings = <&mt LSHIFT F>, <&dshift>;
+                };
+           };
+        };
+
 
         macros {
             dshift: double_shift {
@@ -62,19 +72,19 @@
                     bindings = <&kp LG(V)>;
                 };
 
-                combo_undo {
+                combo_alt_backsapce {
                     // QW
                     key-positions = <1 2>;
                     bindings = <&kp LA(BSPC)>;
                 };
 
-                combo_undo {
+                combo_backsapce {
                     // WE
                     key-positions = <2 3>;
                     bindings = <&kp BSPC>;
                 };
 
-                combo_undo {
+                combo_delete {
                     // ER
                     key-positions = <3 4>;
                     bindings = <&kp DEL>;
