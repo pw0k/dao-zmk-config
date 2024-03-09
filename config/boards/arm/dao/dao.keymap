@@ -26,25 +26,6 @@
 
 / {
 
-        behaviors {
-            td0: tap_dance_double_shift {
-                    compatible = "zmk,behavior-tap-dance";
-                    #binding-cells = <0>;
-                    tapping-term-ms = <200>;
-                    bindings = <&mt LSHIFT F>, <&dshift>;
-                };
-           };
-        };
-
-
-        macros {
-            dshift: double_shift {
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings = <&macro_tap &kp LSHFT &kp LSHFT>;
-            };
-        };
-
         combos {
                 compatible = "zmk,combos";
 
