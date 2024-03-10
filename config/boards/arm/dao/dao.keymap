@@ -111,9 +111,9 @@
 
                 idea_layer {
                         bindings = <
-                  &trans      &trans   &kp LG(LS(L))   &kp LG(E)   &kp LC(LA(R))   &kp LC(LA(D))               &trans   &trans   &trans   &trans   &trans   &trans
+                  &trans      &trans   &kp LA(LG(L))   &kp LG(E)   &kp LC(LA(R))   &kp LC(LA(D))               &trans   &trans   &trans   &trans   &trans   &trans
                   &trans   &kp LG(Z)       &kp LG(X)   &kp LG(C)       &kp LG(V)   &kp LS(LG(Z))               &trans   &trans   &trans   &trans   &trans   &trans
-                  &trans      &trans          &trans      &trans          &trans          &trans               &trans   &trans   &trans   &trans   &trans   &trans
+                  &trans      &trans          &trans   &kp LC(T)          &trans          &trans               &trans   &trans   &trans   &trans   &trans   &trans
                                                           &trans          &trans          &trans               &trans   &trans   &trans
                         >;
                 };
